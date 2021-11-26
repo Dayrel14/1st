@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<body style="background-color:#FFB6C1;">
+</body>
+
+<h1 style="color:Orange;">Activity #1</h1>
+
+
+<div ng-app="" ng-init="names=[
+{Menu:'Sisig',Size:'Large' , Available: 'Yes'},
+{Menu:'Kare Kare',Size:'Medium or Large' , Available: 'Yes.'},
+{Menu:'Ice Cream',Size:'Small' , Available: 'No.'},
+{Menu:'Milk Tea',Size:'Large' , Available: 'Yes.'},
+{Menu:'Fried Chicken',Size:'Large' , Available: 'Yes.'},
+{Menu:'Dinuguan',Size:'Small' , Available: 'Yes.'},
+{Menu:'Sundae',Size:'Small' , Available: 'Yes.'},
+{Menu:'Crispy Pork',Size:Large , Available: 'Yes.'},
+{Menu:'Bangus Sisig',Size:'Medium' , Available: 'No.'},
+{Menu:'Crispy Pata',Size:'Large' , Available: 'Yes.'},
+{Menu:'Tuna Sisig',Size:'Meduim' , Available: 'No.'},
+{Menu:'Ice Tea',Size:'Small' , Available: 'Yes.'},
+{Menu:'Pork BBQ',Size:'Large' , Available: 'No.'},
+{Menu:'Chicken Oil',Size:'Large' , Available: 'Yes.'},
+{Menu:'Pizza',Size:'Large' , Available: 'Yes.'}]">
+
+<div ng-app="">
+
+<p>Name: <input type="text" ng-model="name"></p>
+<p>Your Name is: {{ name }}</p>
+
+
+<p>Enter you Address: <input type="text" ng-model="add"></p>
+<p>Your Adress is: {{ add }}</p>
+
+<p>Enter your School : <input type="text" ng-model="shs"></p>
+<p>Your College is: {{ shs }}</p>
+
+<p>Enter your Course: <input type="text" ng-model="course"></p>
+<p>You Course in College is: {{ course }}</p>
+
+<h2> <p style="color:#FFFF00">Dayrel May Suzon Food Menu </h2>
+<ol>
+  <li ng-repeat="f in names">
+  {{ 'Menu: ' + f.Menu + ', ' + 'Size: ' + f.Size + ', ' + 'Available: ' + f.Available }}</li>
+</ol>
+
+</div>
+
+</body>
+</html>
